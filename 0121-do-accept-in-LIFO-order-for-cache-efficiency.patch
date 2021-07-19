@@ -10,7 +10,7 @@ Subject: [PATCH] do accept() in LIFO order for cache efficiency
  3 files changed, 27 insertions(+), 1 deletion(-)
 
 diff --git a/include/linux/wait.h b/include/linux/wait.h
-index 27fb99cfeb02..9a2c36d081bf 100644
+index f8b0704968a1..cea0169be758 100644
 --- a/include/linux/wait.h
 +++ b/include/linux/wait.h
 @@ -164,6 +164,7 @@ static inline bool wq_has_sleeper(struct wait_queue_head *wq_head)
@@ -30,7 +30,7 @@ index 27fb99cfeb02..9a2c36d081bf 100644
  void finish_wait(struct wait_queue_head *wq_head, struct wait_queue_entry *wq_entry);
  long wait_woken(struct wait_queue_entry *wq_entry, unsigned mode, long timeout);
 diff --git a/kernel/sched/wait.c b/kernel/sched/wait.c
-index 01f5d3020589..6fb633f219c4 100644
+index 21005b980a6b..1ace82671d77 100644
 --- a/kernel/sched/wait.c
 +++ b/kernel/sched/wait.c
 @@ -37,6 +37,17 @@ void add_wait_queue_exclusive(struct wait_queue_head *wq_head, struct wait_queue
@@ -51,7 +51,7 @@ index 01f5d3020589..6fb633f219c4 100644
  void remove_wait_queue(struct wait_queue_head *wq_head, struct wait_queue_entry *wq_entry)
  {
  	unsigned long flags;
-@@ -263,6 +274,19 @@ prepare_to_wait_exclusive(struct wait_queue_head *wq_head, struct wait_queue_ent
+@@ -268,6 +279,19 @@ prepare_to_wait_exclusive(struct wait_queue_head *wq_head, struct wait_queue_ent
  }
  EXPORT_SYMBOL(prepare_to_wait_exclusive);
  
