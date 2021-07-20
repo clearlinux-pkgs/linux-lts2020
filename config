@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 5.10.51 Kernel Configuration
+# Linux/x86 5.10.52 Kernel Configuration
 #
 CONFIG_CC_VERSION_TEXT="gcc (Clear Linux OS for Intel Architecture) 11.1.1 20210714 releases/gcc-11.1.0-444-g5bde7650ca"
 CONFIG_CC_IS_GCC=y
@@ -4163,6 +4163,7 @@ CONFIG_CHARGER_BQ24190=m
 # CONFIG_CHARGER_BQ25980 is not set
 CONFIG_CHARGER_SMB347=m
 # CONFIG_BATTERY_GAUGE_LTC2941 is not set
+# CONFIG_BATTERY_RT5033 is not set
 # CONFIG_CHARGER_RT9455 is not set
 CONFIG_CHARGER_CROS_USBPD=m
 # CONFIG_CHARGER_BD99954 is not set
@@ -7901,7 +7902,6 @@ CONFIG_PWM_LPSS_PLATFORM=m
 
 # CONFIG_IPACK_BUS is not set
 CONFIG_RESET_CONTROLLER=y
-# CONFIG_RESET_BRCMSTB_RESCAL is not set
 # CONFIG_RESET_TI_SYSCON is not set
 
 #
