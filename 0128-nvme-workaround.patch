@@ -8,10 +8,10 @@ Subject: [PATCH] nvme workaround
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/nvme/host/core.c b/drivers/nvme/host/core.c
-index 5a9b2f1b1418..2a361cbe318f 100644
+index bbc3efef5027..fa0a947d2d73 100644
 --- a/drivers/nvme/host/core.c
 +++ b/drivers/nvme/host/core.c
-@@ -48,7 +48,7 @@ static u8 nvme_max_retries = 5;
+@@ -47,7 +47,7 @@ static u8 nvme_max_retries = 5;
  module_param_named(max_retries, nvme_max_retries, byte, 0644);
  MODULE_PARM_DESC(max_retries, "max number of retries a command may have");
  
