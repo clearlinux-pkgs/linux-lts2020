@@ -5,13 +5,13 @@
 #
 
 Name:           linux-lts2020
-Version:        5.10.77
-Release:        28
+Version:        5.10.78
+Release:        29
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
 Group:          kernel
-Source0:        https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.77.tar.xz
+Source0:        https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.78.tar.xz
 Source1:        config
 Source2:        cmdline
 
@@ -106,7 +106,7 @@ Requires:       linux-lts2020-license = %{version}-%{release}
 Linux kernel build files
 
 %prep
-%setup -q -n linux-5.10.77
+%setup -q -n linux-5.10.78
 
 #cve.patch.start cve patches
 #cve.patch.end
