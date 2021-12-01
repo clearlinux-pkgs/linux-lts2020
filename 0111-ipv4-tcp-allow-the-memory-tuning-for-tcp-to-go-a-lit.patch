@@ -9,7 +9,7 @@ Subject: [PATCH] ipv4/tcp: allow the memory tuning for tcp to go a little
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/net/ipv4/tcp.c b/net/ipv4/tcp.c
-index bb16c88f58a3..e85d19b8d03b 100644
+index 63c81af41b43..24e4b5792cbc 100644
 --- a/net/ipv4/tcp.c
 +++ b/net/ipv4/tcp.c
 @@ -4298,8 +4298,8 @@ void __init tcp_init(void)
