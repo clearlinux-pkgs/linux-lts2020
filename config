@@ -1,8 +1,8 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 5.10.89 Kernel Configuration
+# Linux/x86 5.10.90 Kernel Configuration
 #
-CONFIG_CC_VERSION_TEXT="gcc (Clear Linux OS for Intel Architecture) 11.2.1 20211222 releases/gcc-11.2.0-608-gf9406821cf"
+CONFIG_CC_VERSION_TEXT="gcc (Clear Linux OS for Intel Architecture) 11.2.1 20220103 releases/gcc-11.2.0-627-gd4a1d3c4b3"
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=110201
 CONFIG_LD_VERSION=237000000
@@ -246,6 +246,7 @@ CONFIG_BPF_SYSCALL=y
 CONFIG_ARCH_WANT_DEFAULT_BPF_JIT=y
 CONFIG_BPF_JIT_ALWAYS_ON=y
 CONFIG_BPF_JIT_DEFAULT_ON=y
+# CONFIG_BPF_UNPRIV_DEFAULT_OFF is not set
 CONFIG_USERMODE_DRIVER=y
 # CONFIG_BPF_PRELOAD is not set
 # CONFIG_USERFAULTFD is not set
