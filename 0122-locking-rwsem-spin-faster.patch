@@ -9,7 +9,7 @@ tweak rwsem owner spinning a bit
  1 file changed, 3 insertions(+), 1 deletion(-)
 
 diff --git a/kernel/locking/rwsem.c b/kernel/locking/rwsem.c
-index a163542d178e..a2a11ccebb58 100644
+index cc5cc889b5b7..a740b0d96a8a 100644
 --- a/kernel/locking/rwsem.c
 +++ b/kernel/locking/rwsem.c
 @@ -717,6 +717,7 @@ rwsem_spin_on_owner(struct rw_semaphore *sem, unsigned long nonspinnable)
