@@ -1,8 +1,8 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 5.10.112 Kernel Configuration
+# Linux/x86 5.10.113 Kernel Configuration
 #
-CONFIG_CC_VERSION_TEXT="gcc (Clear Linux OS for Intel Architecture) 12.0.1 20220420 (experimental) releases/gcc-11.2.0-1089-g691af15031"
+CONFIG_CC_VERSION_TEXT="gcc (Clear Linux OS for Intel Architecture) 12.0.1 20220423 (experimental) releases/gcc-11.3.0-39-g64c73a25c2"
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=120001
 CONFIG_LD_VERSION=238000000
