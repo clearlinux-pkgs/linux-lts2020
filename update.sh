@@ -3,6 +3,7 @@
 set -euo pipefail
 
 PKG=linux-lts2020
+LTS_VER=5.10
 SPEC=./$PKG.spec
 
 CUR_VER=$(rpmspec --srpm -q --qf="%{VERSION}" $SPEC)
@@ -10,7 +11,7 @@ CUR_VER=${CUR_VER//./\\.}
 
 rm -f releases.json
 curl -sSf -O -L https://www.kernel.org/releases.json
-NEW_VER=$(python3 ./filter-lts.py 5.10 releases.json)
+NEW_VER=$(python3 ./filter-lts.py $LTS_VER releases.json)
 
 sed -i -e "s/$CUR_VER/$NEW_VER/g" $SPEC
 
