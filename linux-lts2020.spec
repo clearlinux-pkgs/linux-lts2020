@@ -45,7 +45,6 @@ Patch0106: 0106-intel_idle-tweak-cpuidle-cstates.patch
 Patch0107: 0107-bootstats-add-printk-s-to-measure-boot-time-in-more-.patch
 Patch0108: 0108-smpboot-reuse-timer-calibration.patch
 Patch0109: 0109-initialize-ata-before-graphics.patch
-Patch0110: 0110-give-rdrand-some-credit.patch
 Patch0111: 0111-ipv4-tcp-allow-the-memory-tuning-for-tcp-to-go-a-lit.patch
 Patch0112: 0112-kernel-time-reduce-ntp-wakeups.patch
 Patch0113: 0113-init-wait-for-partition-and-retry-scan.patch
@@ -124,7 +123,6 @@ Linux kernel build files
 %patch0107 -p1
 %patch0108 -p1
 %patch0109 -p1
-%patch0110 -p1
 %patch0111 -p1
 %patch0112 -p1
 %patch0113 -p1
