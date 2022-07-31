@@ -16,9 +16,9 @@ diff --git a/arch/x86/kernel/alternative.c b/arch/x86/kernel/alternative.c
 index 2400ad62f330..899eb4b13696 100644
 --- a/arch/x86/kernel/alternative.c
 +++ b/arch/x86/kernel/alternative.c
-@@ -723,7 +723,9 @@ void __init alternative_instructions(void)
- 	 * patching.
- 	 */
+@@ -1028,7 +1028,9 @@ void __init alternative_instructions(void)
+ 	apply_retpolines(__retpoline_sites, __retpoline_sites_end);
+ 	apply_returns(__return_sites, __return_sites_end);
  
 +	printk("clr: Applying alternatives\n");
  	apply_alternatives(__alt_instructions, __alt_instructions_end);

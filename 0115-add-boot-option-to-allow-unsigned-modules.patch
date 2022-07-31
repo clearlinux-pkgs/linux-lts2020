@@ -45,7 +45,7 @@ index 5f4403198f04..63344c671175 100644
  #ifndef CONFIG_MODVERSIONS
  #define symversion(base, idx) NULL
  #else
-@@ -4571,6 +4578,19 @@ static const struct proc_ops modules_proc_ops = {
+@@ -4575,6 +4582,19 @@ static const struct proc_ops modules_proc_ops = {
  static int __init proc_modules_init(void)
  {
  	proc_create("modules", 0, NULL, &modules_proc_ops);
