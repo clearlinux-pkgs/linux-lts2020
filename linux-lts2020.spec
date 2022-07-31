@@ -6,7 +6,7 @@
 
 Name:           linux-lts2020
 Version:        5.10.134
-Release:        65
+Release:        66
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
