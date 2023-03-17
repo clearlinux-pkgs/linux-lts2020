@@ -60,7 +60,6 @@ Patch0122: 0122-locking-rwsem-spin-faster.patch
 Patch0123: 0123-ata-libahci-ignore-staggered-spin-up.patch
 Patch0124: 0124-print-CPU-that-faults.patch
 Patch0125: 0125-x86-microcode-Force-update-a-uCode-even-if-the-rev-i.patch
-Patch0126: 0126-x86-microcode-echo-2-reload-to-force-load-ucode.patch
 Patch0127: 0127-fix-bug-in-ucode-force-reload-revision-check.patch
 Patch0128: 0128-nvme-workaround.patch
 Patch0129: 0129-don-t-report-an-error-if-PowerClamp-run-on-other-CPU.patch
@@ -138,7 +137,6 @@ Linux kernel build files
 %patch0123 -p1
 %patch0124 -p1
 %patch0125 -p1
-%patch0126 -p1
 %patch0127 -p1
 %patch0128 -p1
 %patch0129 -p1
