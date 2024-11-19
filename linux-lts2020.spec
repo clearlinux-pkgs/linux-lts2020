@@ -5,13 +5,13 @@
 #
 
 Name:           linux-lts2020
-Version:        5.10.229
-Release:        159
+Version:        5.10.230
+Release:        160
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
 Group:          kernel
-Source0:        https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.229.tar.xz
+Source0:        https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.230.tar.xz
 Source1:        config
 Source2:        cmdline
 
@@ -104,7 +104,7 @@ Requires:       linux-lts2020-license = %{version}-%{release}
 Linux kernel build files
 
 %prep
-%setup -q -n linux-5.10.229
+%setup -q -n linux-5.10.230
 
 #cve.patch.start cve patches
 #cve.patch.end
